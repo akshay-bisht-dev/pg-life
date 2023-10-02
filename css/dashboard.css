@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar-nav p{
+    display: flex;
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+}
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    margin: auto;
+    align-items: center;
+}
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 150px;
+}
+
+.profile-details{
+    margin: 0 50px;
+}
+.profile-details .name{
+    font-weight: bolder;
+    color: black;
+    margin: auto;
+}
+.edit-profile {
+    height: 150px;
+    width: 115px;
+    justify-content: end;
+    align-items: end;
+    display: flex;
+}
+.profile-container {
+    margin: 0 300px;
+    margin-top: 120px;
+}
+.profile-heading h2{
+    font-size: 40px;
+}
+.properties-heading h2{
+    font-size: 40px;
+    margin: 0 300px;
+    margin-top: 120px;
+}
+.user{
+    font-size: 157px;
+    height: 195px;
+    width: 195px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+@media (max-width: 767px) {
+    .profile {
+        height: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-heading{
+        position: absolute;
+        left: 15;
+    }
+    .profile-container {
+        margin: 0px 15px;
+        margin-top: 65px;
+    }
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        margin-top: 100px;
+    }
+    .profile-details {
+        position: absolute;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 270px 0px 0px 0px;
+    }
+    .profile-details .name{
+        margin: unset;
+    }
+    .edit-profile {
+        height: 150px;
+        width: 100%;
+        justify-content: end;
+        align-items: end;
+        display: flex;
+    }
+    .user {
+        font-size: 110px;
+        height: 150px;
+        width: 150px;
+    }
+    .properties-heading h2 {
+        font-size: 28px;
+        margin: 0 20px;
+        margin-top: 55px;
+    }
+}
+
+@media (min-width:767px) and (max-width: 1230px) {
+    .profile-container {
+        margin: 0 130px;
+        margin-top: 120px;
+    }
+}
